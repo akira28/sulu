@@ -22,7 +22,9 @@
                         <% } %>
                     </div>
                     <div class="search-results-details">
-                        <div><%= result.description %></div>
+                        <div>Program version: <%= result.properties.version %></div>
+                        <div>Program url: <%= result.properties.program_url %></div>
+                        <div>Download url: <%= result.properties.download_url %></div>
                     </div>
                 </div>
             </li>
