@@ -28,6 +28,18 @@
                     </div>
                 </div>
             </li>
+            <li>
+                <%= console.log(section) %>
+                <a id="add_<%= section.index %>" href="#" onclick="location.reload();">Add new <%= translate(indexes[section.index].name) %></a>
+                <script>
+                    var route = '#content/contents/' +
+                            //this.options.webspace + '/' +
+                            'software' + '/' +
+                            Globalize.culture().name + '/' +
+                            'add/content';
+                    document.getElementById("add_<%= section.index %>").href=route;
+                </script>
+            </li>
             <% }) %>
         </ul>
     </div>
