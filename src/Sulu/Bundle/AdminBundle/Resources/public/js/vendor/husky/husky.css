@@ -9705,7 +9705,7 @@ a.btn-black, a.btn-highlight {
   position: relative;
   top: 0px;
   left: 0px;
-  width: 250px;
+  width: 100%;
 }
 /* line 63, ../scss/modules/column-navigation.scss */
 .column-navigation-wrapper .column-navigation .column .no-page {

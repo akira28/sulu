@@ -42514,6 +42514,7 @@ define('__component__$column-navigation@husky',[],function() {
         },
 
         insertAddColumn: function(selectedItem, column) {
+            if (column > 0) return;
             var $addColumn = this.sandbox.dom.createElement(this.sandbox.util.template(templates.column)({
                 columnNumber: column + 1,
                 id: 'column' + this.options.instanceName + '-' + (column + 1)
